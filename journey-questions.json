@@ -1,0 +1,101 @@
+{
+  "mainQuestions": [
+    {
+      "id": "q1",
+      "type": "input",
+      "title": "What is your full name?"
+    },
+    {
+      "id": "q2",
+      "type": "single_choice",
+      "title": "Do you have prior work experience?",
+      "options": [
+        {
+          "label": "Yes",
+          "value": "yes",
+          "subQuestionGroupId": "experience_yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "multi_choice",
+      "title": "Which technologies have you worked with?",
+      "options": [
+        {
+          "label": "React",
+          "value": "react",
+          "subQuestionGroupId": "react_experience"
+        },
+        {
+          "label": "Node.js",
+          "value": "node",
+          "subQuestionGroupId": "node_experience"
+        },
+        {
+          "label": "Python",
+          "value": "python"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "input",
+      "title": "Why do you want to apply for this role?"
+    }
+  ],
+  "subQuestions": [
+    {
+      "groupId": "experience_yes",
+      "questions": [
+        {
+          "id": "sq1",
+          "type": "input",
+          "title": "How many years of work experience do you have?"
+        },
+        {
+          "id": "sq2",
+          "type": "single_choice",
+          "title": "Have you worked in a team environment?",
+          "options": [
+            { "label": "Yes", "value": "yes" },
+            { "label": "No", "value": "no" }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "react_experience",
+      "questions": [
+        {
+          "id": "sq3",
+          "type": "input",
+          "title": "How many years of experience do you have with React?"
+        }
+      ]
+    },
+    {
+      "groupId": "node_experience",
+      "questions": [
+        {
+          "id": "sq4",
+          "type": "single_choice",
+          "title": "Have you used Express.js in production?",
+          "options": [
+            { "label": "Yes", "value": "yes" },
+            { "label": "No", "value": "no" }
+          ]
+        },
+        {
+          "id": "sq5",
+          "type": "input",
+          "title": "What kind of Node.js projects have you worked on?"
+        }
+      ]
+    }
+  ]
+}
